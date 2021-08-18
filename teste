@@ -1,0 +1,8 @@
+const startGame = () =>{
+      coin.flip()
+      coin.toString()
+      let img = coin.toHTML()
+      console.log(img)
+  }
+  let btn = document.getElementById("btnJogar")
+  btn.addEventListener("click", startGame)
