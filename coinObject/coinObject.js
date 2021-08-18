@@ -17,11 +17,11 @@ const coin = {
     toHTML: function () {
       const image = document.createElement("img");
       if(this.toString() === 'Tails'){
-        image.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbfu-wEUqDQUksaFlvWYuD4ud3uwCdI_RlDuRLs6rNZ36dXcoOl8yCT7FFqh9WG7RGh0E&usqp=CAU'
+        image.src = '../imagens/queen.jpeg'
         image.alt = 'Tails'
       }
       if(this.toString() === 'Heads'){
-          image.src = 'https://images-na.ssl-images-amazon.com/images/I/81%2B37SxRZfL.png'
+          image.src = '../imagens/heads.png'
           image.alt ='Heads'
       }
       return image;
