@@ -1,17 +1,25 @@
-let pResults = document.getElementById("resultP")
-let sectionImgs = document.getElementsByTagName("section")[0]
+let main = document.createElement("main")
+document.body.appendChild(main)
+let btn = document.createElement('button')
+btn.innerHTML =' Jogar'
+main.appendChild(btn)
+let sectionImgs = document.createElement("section")
+let pResults = document.createElement('p')
+main.appendChild(pResults)
+main.appendChild(sectionImgs)
+
 function display20Flips() {
     const results = [];
     for(let i=0; i<20; i++){
         coin.flip()
         results.push(coin.toString())
     }
-    pResults.innerHTML = results.join(', ')
+    pResults.innerHTML = results.join(', ') 
     return results
   }
 
   function display20Images() {
-    sectionImgs.innerHTML = ' '
+    sectionImgs.innerHTML = ''
     const results = [];
     for(let i=0; i<20;i++){
         coin.flip()
@@ -34,4 +42,5 @@ function display20Flips() {
     display20Flips()
     display20Images()
   }
- let btn = document.getElementById("btnPlay").addEventListener('click', play)
+ 
+  btn.addEventListener('click', play)
