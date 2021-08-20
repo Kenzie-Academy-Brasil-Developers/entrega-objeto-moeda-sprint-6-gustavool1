@@ -17,21 +17,18 @@ const coin = {
     toHTML: function () {
       const image = document.createElement("img");
       if(this.toString() === 'Tails'){
-        image.src = '../imagens/queen.jpeg'
+        image.src = 'imagens/queen.jpeg'
         image.alt = 'Tails'
       }
       if(this.toString() === 'Heads'){
-          image.src = '../imagens/heads.png'
+          image.src = 'imagens/heads.png'
           image.alt ='Heads'
       }
       return image;
     },
   };
 
- for(let i=0; i<20; i++){
-     coin.flip()
-     console.log(coin.toString())
- }
+ 
   
 
   
